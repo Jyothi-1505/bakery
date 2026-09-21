@@ -73,7 +73,7 @@ body {
    TOP CONTROLS
 ========================================================= */
 
-.book-card-controls {
+/* .book-card-controls {
 
     position: absolute;
 
@@ -87,9 +87,245 @@ body {
     gap: 10px;
 
     z-index: 5;
+} */
+
+/* =========================================================
+   BOOK NOW PAGE CONTROLS
+   FIXED OUTSIDE THE CARD
+========================================================= */
+
+.book-page-controls {
+
+    position: fixed;
+
+    top: 24px;
+    right: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    z-index: 99999;
+
 }
 
 
+/* =========================================================
+   CONTROL BUTTONS
+========================================================= */
+
+.book-page-controls .header-control-button {
+
+    width: 44px;
+    height: 44px;
+
+    min-width: 44px;
+    min-height: 44px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid var(--color-primary);
+
+    border-radius: 50%;
+
+    background: var(--color-surface);
+
+    color: var(--color-primary);
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        border-color .25s ease;
+}
+
+
+.book-page-controls .header-control-button svg {
+
+    width: 17px;
+    height: 17px;
+
+    stroke: currentColor;
+
+}
+
+
+.book-page-controls .header-control-button:hover {
+
+    background: var(--color-primary);
+
+    color: var(--color-white);
+
+    border-color: var(--color-primary);
+
+}
+/* =========================================================
+   RTL - FIXED CONTROLS
+========================================================= */
+
+html[dir="rtl"] .book-page-controls {
+
+    right: auto;
+
+    left: 24px;
+
+}
+/* =========================================================
+   FIXED CONTROLS - 1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .book-page-controls {
+
+        top: 18px;
+        right: 20px;
+
+        gap: 8px;
+
+    }
+
+
+    .book-page-controls .header-control-button {
+
+        width: 40px;
+        height: 40px;
+
+        min-width: 40px;
+        min-height: 40px;
+
+    }
+
+
+    .book-page-controls .header-control-button svg {
+
+        width: 16px;
+        height: 16px;
+
+    }
+
+
+    html[dir="rtl"] .book-page-controls {
+
+        right: auto;
+
+        left: 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   FIXED CONTROLS - 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .book-page-controls {
+
+        top: 14px;
+        right: 16px;
+
+        gap: 7px;
+
+    }
+
+
+    .book-page-controls .header-control-button {
+
+        width: 36px;
+        height: 36px;
+
+        min-width: 36px;
+        min-height: 36px;
+
+        font-size: 10px;
+
+    }
+
+
+    .book-page-controls .header-control-button svg {
+
+        width: 15px;
+        height: 15px;
+
+    }
+
+
+    html[dir="rtl"] .book-page-controls {
+
+        right: auto;
+
+        left: 16px;
+
+    }
+
+}
+
+
+/* =========================================================
+   FIXED CONTROLS - 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .book-page-controls {
+
+        top: 10px;
+        right: 10px;
+
+        gap: 5px;
+
+    }
+
+
+    .book-page-controls .header-control-button {
+
+        width: 32px;
+        height: 32px;
+
+        min-width: 32px;
+        min-height: 32px;
+
+        font-size: 8px;
+
+    }
+
+
+    .book-page-controls .header-control-button svg {
+
+        width: 13px;
+        height: 13px;
+
+    }
+
+
+    html[dir="rtl"] .book-page-controls {
+
+        right: auto;
+
+        left: 10px;
+
+    }
+
+}
 /* =========================================================
    CONTROL BUTTON
 ========================================================= */
