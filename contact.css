@@ -1,3 +1,4 @@
+/* @import url(./assets/css/common.css); */
 .contact-hero{
 width:100%;
 min-height:55vh;
@@ -1274,3 +1275,665 @@ width:100%;
         max-width: 100%;
     }
 }
+
+/* =========================================
+   CONTACT CTA SECTION
+========================================= */
+
+.contact-cta {
+    width: 100%;
+    padding: 85px 0;
+    background: var(--color-surface);
+    overflow: hidden;
+}
+
+.contact-cta__inner {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 55px 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+
+    background: var(--color-surface-secondary);
+}
+
+.contact-cta__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-cta .section-eyebrow {
+    display: block;
+    margin-bottom: 12px;
+
+    color: var(--color-primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.contact-cta__content h2 {
+    max-width: 650px;
+    margin: 0 0 16px;
+
+    color: var(--color-heading);
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -.025em;
+}
+
+.contact-cta__content p {
+    max-width: 600px;
+    margin: 0;
+
+    color: var(--color-text);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CTA ACTIONS
+========================================= */
+
+.contact-cta__actions {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+   Uses Bakers Corner primary color
+========================================= */
+
+.contact-cta .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-height: 46px;
+    padding: .7rem 1.2rem;
+
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-pill);
+
+    background: var(--color-primary);
+    color: var(--color-white);
+
+    font-size: .9rem;
+    font-weight: 600;
+    white-space: nowrap;
+
+    text-decoration: none;
+
+    transition:
+        background-color var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast),
+        box-shadow var(--transition-fast);
+}
+
+.contact-cta .btn-primary:hover {
+    background: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    color: var(--color-white);
+
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(180, 83, 9, .2);
+}
+
+.contact-cta .btn-primary svg {
+    width: 17px;
+    height: 17px;
+
+    transition: transform var(--transition-fast);
+}
+
+.contact-cta .btn-primary:hover svg {
+    transform: translate(2px, -2px);
+}
+
+
+/* =========================================
+   SECONDARY BUTTON
+   Uses common secondary color
+========================================= */
+
+.contact-cta .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-height: 46px;
+    padding: .7rem 1.2rem;
+
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-pill);
+
+    background: transparent;
+    color: var(--color-primary);
+
+    font-size: .9rem;
+    font-weight: 600;
+    white-space: nowrap;
+
+    text-decoration: none;
+
+    transition:
+        background-color var(--transition-fast),
+        border-color var(--transition-fast),
+        color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.contact-cta .btn-secondary:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+
+    transform: translateY(-2px);
+}
+
+.contact-cta .btn-secondary svg {
+    width: 17px;
+    height: 17px;
+
+    transition: transform var(--transition-fast);
+}
+
+.contact-cta .btn-secondary:hover svg {
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+html[data-theme="dark"] .contact-cta {
+    background: var(--color-dark-background);
+}
+
+html[data-theme="dark"] .contact-cta__inner {
+    background: var(--color-dark-surface);
+    border-color: var(--color-dark-border);
+}
+
+html[data-theme="dark"] .contact-cta__content h2 {
+    color: var(--color-dark-heading);
+}
+
+html[data-theme="dark"] .contact-cta__content p {
+    color: var(--color-dark-text);
+}
+
+html[data-theme="dark"] .contact-cta .btn-secondary {
+    border-color: var(--color-primary-light);
+    color: var(--color-primary-light);
+}
+
+html[data-theme="dark"] .contact-cta .btn-secondary:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+
+/* =========================================
+   1024px
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .contact-cta {
+        padding: 70px 0;
+    }
+
+    .contact-cta__inner {
+        max-width: 900px;
+        padding: 45px 45px;
+        gap: 35px;
+    }
+
+    .contact-cta__content h2 {
+        font-size: 38px;
+    }
+
+    .contact-cta__content p {
+        font-size: 15px;
+    }
+
+    .contact-cta__actions {
+        gap: 10px;
+    }
+
+    .contact-cta .btn-primary,
+    .contact-cta .btn-secondary {
+        min-height: 44px;
+        padding: .65rem 1rem;
+        font-size: .82rem;
+    }
+}
+
+
+/* =========================================
+   768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    .contact-cta {
+        padding: 55px 0;
+    }
+
+    .contact-cta__inner {
+        width: 100%;
+        max-width: 650px;
+
+        padding: 40px 30px;
+
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        gap: 28px;
+
+        border-radius: var(--radius-medium);
+    }
+
+    .contact-cta__content {
+        width: 100%;
+    }
+
+    .contact-cta .section-eyebrow {
+        margin-bottom: 10px;
+        font-size: 11px;
+    }
+
+    .contact-cta__content h2 {
+        max-width: 600px;
+
+        margin: 0 auto 14px;
+
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .contact-cta__content p {
+        max-width: 560px;
+
+        margin: 0 auto;
+
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .contact-cta__actions {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    .contact-cta .btn-primary,
+    .contact-cta .btn-secondary {
+        min-width: 145px;
+    }
+}
+
+
+/* =========================================
+   360px
+========================================= */
+
+@media (max-width: 360px) {
+
+    .contact-cta {
+        padding: 42px 0;
+    }
+
+    .contact-cta__inner {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 32px 18px;
+
+        gap: 23px;
+
+        border-radius: 15px;
+    }
+
+    .contact-cta .section-eyebrow {
+        margin-bottom: 8px;
+
+        font-size: 9px;
+        letter-spacing: .1em;
+    }
+
+    .contact-cta__content h2 {
+        width: 100%;
+
+        margin-bottom: 12px;
+
+        font-size: 27px;
+        line-height: 1.2;
+        letter-spacing: -.015em;
+    }
+
+    .contact-cta__content p {
+        width: 100%;
+
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .contact-cta__actions {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .contact-cta .btn-primary,
+    .contact-cta .btn-secondary {
+        width: 100%;
+        min-width: 0;
+        min-height: 43px;
+
+        padding: .6rem .9rem;
+
+        box-sizing: border-box;
+
+        font-size: .78rem;
+    }
+
+    .contact-cta .btn-primary svg,
+    .contact-cta .btn-secondary svg {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+/* =========================================
+   CONTACT FAQ
+========================================= */
+
+.contact-faq {
+    padding: 90px 0;
+    background: var(--color-surface-secondary);
+}
+
+.contact-faq__heading {
+    max-width: 720px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.contact-faq__heading h2 {
+    margin: 12px 0 16px;
+    color: var(--color-heading);
+}
+
+.contact-faq__heading p {
+    margin: 0;
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   FAQ LIST
+========================================= */
+
+.contact-faq__list {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+/* =========================================
+   FAQ ITEM
+========================================= */
+
+.contact-faq__item {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    overflow: hidden;
+    transition: var(--transition-base);
+}
+
+.contact-faq__item:hover {
+    border-color: var(--color-primary);
+}
+
+
+/* =========================================
+   QUESTION
+========================================= */
+
+.contact-faq__question {
+    width: 100%;
+    min-height: 70px;
+    padding: 20px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    border: 0;
+    background: transparent;
+    color: var(--color-heading);
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.contact-faq__question svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: var(--color-primary);
+    transition: transform var(--transition-base);
+}
+
+
+/* =========================================
+   ANSWER
+========================================= */
+
+.contact-faq__answer {
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition:
+        grid-template-rows .35s ease,
+        padding .35s ease;
+}
+
+.contact-faq__answer p {
+    min-height: 0;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0 24px;
+
+    color: var(--color-text);
+    line-height: 1.7;
+
+    transition: padding .35s ease;
+}
+
+
+/* =========================================
+   ACTIVE FAQ
+========================================= */
+
+.contact-faq__item.active
+.contact-faq__answer {
+    grid-template-rows: 1fr;
+}
+
+.contact-faq__item.active
+.contact-faq__answer p {
+    padding: 0 24px 22px;
+}
+
+.contact-faq__item.active
+.contact-faq__question svg {
+    transform: rotate(45deg);
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+[data-theme="dark"] .contact-faq {
+    background: var(--color-dark-background);
+}
+
+[data-theme="dark"] .contact-faq__item {
+    background: var(--color-dark-surface);
+    border-color: var(--color-dark-border);
+}
+
+[data-theme="dark"] .contact-faq__item:hover {
+    border-color: var(--color-primary);
+}
+
+[data-theme="dark"] .contact-faq__heading h2,
+[data-theme="dark"] .contact-faq__question {
+    color: var(--color-dark-heading);
+}
+
+[data-theme="dark"] .contact-faq__heading p,
+[data-theme="dark"] .contact-faq__answer p {
+    color: var(--color-dark-text);
+}
+
+
+/* =========================================
+   1024px
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .contact-faq {
+        padding: 75px 0;
+    }
+
+    .contact-faq__heading {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+/* =========================================
+   768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    .contact-faq {
+        padding: 65px 0;
+    }
+
+    .contact-faq__list {
+        max-width: 650px;
+    }
+
+    .contact-faq__question {
+        min-height: 64px;
+        padding: 18px 20px;
+    }
+
+    .contact-faq__answer p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-faq__item.active
+    .contact-faq__answer p {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+/* =========================================
+   360px
+========================================= */
+
+@media (max-width: 360px) {
+
+    .contact-faq {
+        padding: 55px 0;
+    }
+
+    .contact-faq__heading h2 {
+        font-size: 28px;
+    }
+
+    .contact-faq__heading {
+        margin-bottom: 30px;
+    }
+
+    .contact-faq__question {
+        min-height: 60px;
+        padding: 16px;
+        font-size: 15px;
+    }
+
+    .contact-faq__question svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .contact-faq__answer p {
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 15px;
+    }
+
+    .contact-faq__item.active
+    .contact-faq__answer p {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 18px;
+    }
+
+}
+

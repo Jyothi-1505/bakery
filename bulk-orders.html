@@ -276,6 +276,208 @@
 </div>
 </div>
 </section>
+
+
+<!-- =========================================
+     BULK ORDER ENQUIRY
+========================================= -->
+<section class="bulk-enquiry">
+    <div class="container">
+
+        <div class="bulk-enquiry__heading">
+            <span class="section-eyebrow">BULK ORDER ENQUIRY</span>
+            <h2>Tell Us What You Need</h2>
+            <p>
+                Planning a large order for your bakery, business, event, or
+                celebration? Share your requirements with us and our team
+                will get back to you.
+            </p>
+        </div>
+
+        <div class="bulk-enquiry__wrapper">
+
+            <!-- Form -->
+            <div class="bulk-enquiry__form-card">
+
+                <form class="bulk-enquiry__form" id="bulk-order-form">
+
+                    <div class="bulk-form__row">
+
+                        <div class="bulk-form__group">
+                            <label for="bulk-name">Full Name</label>
+                            <input
+                                type="text"
+                                id="bulk-name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+                        </div>
+
+                        <div class="bulk-form__group">
+                            <label for="bulk-email">Email Address</label>
+                            <input
+                                type="email"
+                                id="bulk-email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="bulk-form__row">
+
+                        <div class="bulk-form__group">
+                            <label for="bulk-phone">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="bulk-phone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                required
+                            >
+                        </div>
+
+                        <div class="bulk-form__group">
+                            <label for="bulk-category">Order Category</label>
+
+                            <select id="bulk-category" name="category" required>
+                                <option value="" selected disabled>
+                                    Select category
+                                </option>
+                                <option value="bakeware">
+                                    Bakeware Essentials
+                                </option>
+                                <option value="ingredients">
+                                    Pantry Ingredients
+                                </option>
+                                <option value="decorating">
+                                    Decorating Supplies
+                                </option>
+                                <option value="equipment">
+                                    Baking Equipment
+                                </option>
+                                <option value="custom">
+                                    Custom Requirement
+                                </option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="bulk-form__row">
+
+                        <div class="bulk-form__group">
+                            <label for="bulk-quantity">Estimated Quantity</label>
+                            <input
+                                type="number"
+                                id="bulk-quantity"
+                                name="quantity"
+                                min="1"
+                                placeholder="Enter quantity"
+                                required
+                            >
+                        </div>
+
+                        <div class="bulk-form__group">
+                            <label for="bulk-date">Required Date</label>
+                            <input
+                                type="date"
+                                id="bulk-date"
+                                name="date"
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="bulk-form__group">
+                        <label for="bulk-message">Tell Us About Your Requirement</label>
+
+                        <textarea
+                            id="bulk-message"
+                            name="message"
+                            rows="5"
+                            placeholder="Describe the products, quantity, event, or any special requirements..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="header-cta-button bulk-form__submit">
+                        Send Bulk Enquiry
+                        <i data-lucide="arrow-up-right"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- Information -->
+            <div class="bulk-enquiry__info">
+
+                <span class="section-eyebrow">BULK ORDERS</span>
+
+                <h3>Built Around Your Requirements</h3>
+
+                <p>
+                    Whether you're purchasing supplies for a bakery,
+                    preparing for an event, or placing a large business
+                    order, we can help you find the right products and
+                    quantities.
+                </p>
+
+                <div class="bulk-enquiry__points">
+
+                    <div class="bulk-enquiry__point">
+                        <div class="bulk-enquiry__icon">
+                            <i data-lucide="package"></i>
+                        </div>
+                        <div>
+                            <h4>Large Quantities</h4>
+                            <p>
+                                Order baking essentials and supplies in
+                                quantities that suit your requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bulk-enquiry__point">
+                        <div class="bulk-enquiry__icon">
+                            <i data-lucide="clipboard-list"></i>
+                        </div>
+                        <div>
+                            <h4>Custom Requirements</h4>
+                            <p>
+                                Share your specific product and quantity
+                                requirements with our team.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bulk-enquiry__point">
+                        <div class="bulk-enquiry__icon">
+                            <i data-lucide="headphones"></i>
+                        </div>
+                        <div>
+                            <h4>Personal Assistance</h4>
+                            <p>
+                                Our team will review your enquiry and help
+                                you with the next steps.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
 <!-- =========================================
      BULK ORDER BENEFITS
 ========================================= -->
