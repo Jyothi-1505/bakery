@@ -494,7 +494,7 @@ transform:translate(6px,-8px);
 .curated-collection-section{
 position:relative;
 overflow:hidden;
-padding:100px 0;
+padding:60px 0;
 background:var(--color-surface);
 }
 .curated-collection-layout{
@@ -600,7 +600,7 @@ justify-content:space-between;
 padding-top:1rem;
 border-top:1px solid var(--color-border);
 color:var(--color-text);
-font-size:.4rem;
+font-size:.54rem;
 font-weight:500;
 letter-spacing:.12em;
 }
@@ -752,7 +752,7 @@ margin:1.2rem auto 0;
 padding-top:1rem;
 border-top:1px solid var(--color-border);
 color:var(--color-text);
-font-size:.42rem;
+font-size:.54rem;
 font-weight:500;
 letter-spacing:.13em;
 }
@@ -766,9 +766,9 @@ background:var(--color-primary);
 .find-bake-section{
 position:relative;
 overflow:hidden;
-background:#f8f1e8;
-padding:80px 0 75px;
-color:#482116;
+background:var(--color-surface-secondary);
+padding:60px 0;
+color:var(--color-secondary);
 }
 .find-bake-container{
 width:min(1200px,90%);
@@ -1003,7 +1003,7 @@ height:18px;
 .signature-products-section{
 position:relative;
 overflow:hidden;
-padding:100px 0;
+padding:60px 0;
 background:var(--color-surface);
 color:var(--color-secondary);
 }
@@ -1017,14 +1017,14 @@ color:var(--color-secondary);
     margin: 0 auto 3.5rem;
 }
 
-.signature-products-heading .section-eyebrow {
+/* .signature-products-heading .section-eyebrow {
     display: block;
     margin-bottom: 1.2rem;
     color: var(--color-primary);
     font-size: .5rem;
     font-weight: 600;
     letter-spacing: .17em;
-}
+} */
 
 .signature-products-heading h2 {
     margin: 0;
@@ -1151,7 +1151,7 @@ display:flex;
 align-items:center;
 gap:.4rem;
 color:var(--color-text);
-font-size:.43rem;
+font-size:.54rem;
 font-weight:600;
 letter-spacing:.11em;
 transition:color var(--transition-fast);
@@ -1178,7 +1178,7 @@ margin:1.2rem auto 0;
 padding-top:1rem;
 border-top:1px solid var(--color-border);
 color:var(--color-text);
-font-size:.42rem;
+font-size:.54rem;
 font-weight:500;
 letter-spacing:.13em;
 }
@@ -1208,7 +1208,7 @@ color:var(--color-primary);
 .baker-inspiration-section{
 position:relative;
 overflow:hidden;
-padding:50px 0;
+padding:60px 0;
 background:var(--color-surface);
 }
 .baker-inspiration-heading{
@@ -1480,9 +1480,9 @@ transform:translateX(4px);
 .why-bakers-section{
 position:relative;
 overflow:hidden;
-background:#f7f1e9;
+background:var(--color-surface-secondary);
 padding:55px 0 45px;
-color:#48190d;
+color:var(--color-secondary);
 }
 .why-bakers-bg{
 position:absolute;
@@ -1832,7 +1832,8 @@ transform:translateX(3px);
 position:relative;
 overflow:hidden;
 background: var(--color-surface);
-padding:70px 0 55px;
+/* padding:70px 0 55px; */
+padding:60px 0;
 color:#3f2118;
 }
 .community-container{
@@ -2299,7 +2300,7 @@ transition:none;
 .testimonials-section{
 position:relative;
 overflow:hidden;
-padding:7rem 5vw;
+padding:60px 0;
 background:var(--color-surface);
 }
 .testimonials-container{
@@ -2315,14 +2316,14 @@ margin:0 auto;
     max-width: 1180px;
     margin: 0 auto 3.5rem;
 }
-.testimonials-heading .section-eyebrow{
+/* .testimonials-heading .section-eyebrow{
     display: block;
     margin-bottom: 1.2rem;
     color: var(--color-primary);
     font-size: .5rem;
     font-weight: 600;
     letter-spacing: .17em;
-}
+} */
 .testimonials-heading h2{
     margin: 0;
     color: var(--color-secondary);
