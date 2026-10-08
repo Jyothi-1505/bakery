@@ -200,7 +200,8 @@ gap:.1rem;
 }
 .hero-highlight strong{
 color:var(--color-heading);
-font-size:.82rem;
+/* font-size:.82rem; */
+font-size:16px;
 font-weight:600;
 }
 .hero-highlight div span{
@@ -362,7 +363,8 @@ align-items:center;
 gap:.45rem;
 margin-bottom:.85rem;
 color:var(--color-primary);
-font-size:.75rem;
+/* font-size:.75rem; */
+font-size:16px;
 font-weight:600;
 letter-spacing:.06em;
 text-transform:uppercase;
@@ -382,12 +384,12 @@ letter-spacing:-.035em;
 color:var(--color-primary);
 }
 .section-description{
-max-width:620px;
-margin:0 auto;
-color:var(--color-text);
-font-size:.98rem;
-font-weight:400;
-line-height:1.75;
+    max-width:620px;
+    margin:0 auto;
+    color:var(--color-text);
+    font-size:16px;
+    font-weight:400;
+    line-height:1.7;
 }
 .baking-category-grid{
 position:relative;
@@ -447,7 +449,8 @@ border:1px solid rgba(255,255,255,.35);
 border-radius:50%;
 background:rgba(255,255,255,.9);
 color:var(--color-primary);
-font-size:1rem;
+/* font-size:1rem; */
+font-size:16px;
 box-shadow:0 5px 15px rgba(0,0,0,.1);
 transition:transform var(--transition-base),background-color var(--transition-base),color var(--transition-base);
 }
@@ -472,7 +475,9 @@ font-weight:600;
 .baking-category-content p{
 margin:0;
 color:var(--color-text-light);
-font-size:.76rem;
+/* font-size:.76rem; */
+font-size:16px;
+/* line-height:1.7; */
 font-weight:400;
 line-height:1.5;
 }
@@ -885,7 +890,8 @@ font-weight:600;
 .bake-confidence-feature p{
 margin:0;
 color:var(--color-text-light);
-font-size:.8rem;
+/* font-size:.8rem; */
+font-size:16px;
 font-weight:400;
 line-height:1.6;
 }
@@ -1029,12 +1035,12 @@ font-weight:600;
 line-height:1.2;
 }
 .baking-inspiration-content>p{
-max-width:450px;
-margin:0 0 1.5rem;
-color:var(--color-text);
-font-size:.82rem;
-font-weight:400;
-line-height:1.8;
+    max-width:450px;
+    margin:0 0 1.5rem;
+    color:var(--color-text);
+    font-size:16px;
+    font-weight:400;
+    line-height:1.7;
 }
 .baking-content-details{
 display:flex;
@@ -1116,12 +1122,12 @@ max-width:570px;
 margin-bottom:1rem;
 }
 .why-bakers-intro>p{
-max-width:510px;
-margin:0 0 1.75rem;
-color:var(--color-text);
-font-size:.85rem;
-font-weight:400;
-line-height:1.8;
+    max-width:510px;
+    margin:0 0 1.75rem;
+    color:var(--color-text);
+    font-size:16px;
+    font-weight:400;
+    line-height:1.7;
 }
 .why-bakers-values{
 border-top:1px solid var(--color-border);
@@ -1158,7 +1164,8 @@ font-weight:600;
 .why-bakers-value-content p{
 margin:0;
 color:var(--color-text);
-font-size:.73rem;
+/* font-size:.73rem; */
+font-size:16px;
 font-weight:400;
 line-height:1.65;
 }
@@ -1210,7 +1217,8 @@ font-weight:500;
 .why-bakers-stat p{
 margin:0;
 color:var(--color-secondary);
-font-size:.65rem;
+/* font-size:.65rem; */
+font-size:16px;
 font-weight:500;
 letter-spacing:.04em;
 text-transform:uppercase;
@@ -1241,7 +1249,7 @@ position:absolute;
 top:-2rem;
 left:0;
 color:var(--color-primary);
-font-family:Georgia,serif;
+font-family: var(--font-family-base);
 font-size:5rem;
 font-weight:400;
 line-height:1;
@@ -1256,7 +1264,7 @@ bottom:-3rem;
 .bakers-note-quote blockquote{
 margin:0;
 color:var(--color-heading);
-font-family:Georgia,serif;
+font-family:var(--font-family-base);
 font-size:clamp(2rem,4vw,3.5rem);
 font-weight:400;
 line-height:1.25;
@@ -1279,7 +1287,8 @@ opacity:.55;
 .bakers-note-author p{
 margin:0;
 color:var(--color-secondary);
-font-size:.7rem;
+/* font-size:.7rem; */
+font-size:16px;
 font-weight:500;
 letter-spacing:.08em;
 text-transform:uppercase;
@@ -1535,7 +1544,8 @@ margin-top:2.5rem;
 
     color: var(--color-text);
 
-    font-size: .72rem;
+    /* font-size: .72rem; */
+    font-size:16px;
     font-weight: 400;
 
     line-height: 1.7;
@@ -1673,16 +1683,13 @@ margin-top:2.5rem;
     letter-spacing: -.02em;
 }
 
-.newsletter-content > p {
-    max-width: 440px;
-
-    margin: 0 0 1.1rem;
-
-    color: var(--color-text);
-
-    font-size: .7rem;
-    font-weight: 400;
-    line-height: 1.6;
+.newsletter-content > p{
+    max-width:440px;
+    margin:0 0 1.1rem;
+    color:var(--color-text);
+    font-size:16px;
+    font-weight:400;
+    line-height:1.7;
 }
 
 .newsletter-form {
@@ -1711,27 +1718,18 @@ margin-top:2.5rem;
     pointer-events: none;
 }
 
-.newsletter-input-wrap input {
-    width: 100%;
-    height: 42px;
-
-    padding: 0 1rem 0 2.2rem;
-
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-medium);
-
-    outline: 0;
-
-    background: var(--color-background);
-    color: var(--color-heading);
-
-    font-family: inherit;
-    font-size: .65rem;
-    font-weight: 400;
-
-    transition:
-        border-color var(--transition-fast),
-        box-shadow var(--transition-fast);
+.newsletter-input-wrap input{
+    width:100%;
+    height:42px;
+    padding:0 1rem 0 2.2rem;
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-medium);
+    outline:0;
+    background:var(--color-background);
+    color:var(--color-heading);
+    font-family:inherit;
+    font-size:16px;
+    font-weight:400;
 }
 
 .newsletter-input-wrap input::placeholder {
@@ -2443,3 +2441,180 @@ justify-content:flex-start;
 font-size:.54rem;
 }
 } */
+
+/* =========================================================
+   HOME 1 - 360px RESPONSIVE FIX
+   Samsung Galaxy S8+
+========================================================= */
+
+@media (max-width: 360px) {
+
+    /* -----------------------------------------------------
+       HERO - KEEP FLOATING CARDS INSIDE VIEWPORT
+    ----------------------------------------------------- */
+
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .hero-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: .5rem !important;
+    }
+
+    .hero-image-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-floating-card {
+        max-width: calc(100% - 16px);
+        box-sizing: border-box;
+        gap: .5rem;
+        padding: .6rem .65rem;
+    }
+
+    .hero-floating-card--top {
+        left: 8px !important;
+        right: auto !important;
+    }
+
+    .hero-floating-card--bottom {
+        right: 8px !important;
+        left: auto !important;
+    }
+
+    .hero-floating-card strong,
+    .hero-floating-card div span {
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-floating-card strong {
+        font-size: .68rem;
+        line-height: 1.25;
+    }
+
+    .hero-floating-card div span {
+        font-size: .56rem;
+        line-height: 1.35;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 4 - BAKE WITH CONFIDENCE
+       Keep floating experience card inside viewport
+    ----------------------------------------------------- */
+
+    .bake-confidence-visual {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .bake-confidence-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: .4rem .4rem .8rem !important;
+    }
+
+    .bake-confidence-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .bake-confidence-experience {
+        right: 8px !important;
+        max-width: calc(100% - 16px);
+        box-sizing: border-box;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 6 - WHY BAKERS CORNER
+       Prevent statistics from going outside viewport
+    ----------------------------------------------------- */
+
+    .why-bakers-stats {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        row-gap: 1.5rem;
+    }
+
+    .why-bakers-stat {
+        min-width: 0;
+        padding: 0 .75rem;
+    }
+
+    .why-bakers-stat:nth-child(3) {
+        border-left: 0;
+    }
+
+    .why-bakers-stat strong {
+        font-size: 1.7rem;
+    }
+
+    .why-bakers-stat p {
+        font-size: .58rem;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 7 - BAKER'S NOTE
+       Keep category cards inside viewport
+    ----------------------------------------------------- */
+
+    .bakers-note-inner {
+        width: 100%;
+        max-width: 100%;
+        padding-left: .25rem;
+        padding-right: .25rem;
+    }
+
+    .bakers-note-quote {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 .25rem;
+    }
+
+    .bakers-note-quote blockquote {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(1.65rem, 7vw, 2.3rem);
+        line-height: 1.25;
+        overflow-wrap: anywhere;
+    }
+
+    .bakers-note-categories {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr !important;
+    }
+
+    .bakers-note-category {
+        width: 100%;
+        min-width: 0;
+        grid-template-columns: 30px minmax(0, 1fr) 28px;
+        gap: .75rem;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .bakers-note-category + .bakers-note-category {
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .bakers-note-category strong {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+}

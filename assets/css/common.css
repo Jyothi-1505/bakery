@@ -33,10 +33,15 @@
 --color-dark-text:#E7E5E4;
 --color-dark-text-light:#A8A29E;
 --color-dark-border:rgba(255,255,255,.12);
---font-family-base:"Playfair Display",serif;
+--font-family-base:"Sora", sans-serif;
+--font-family-heading:"Sora", sans-serif;
+/* --font-family-base:"Playfair Display",serif;
+--font-family-heading:"Lucida" Grande, sans-serif; */
+/* --font-family-base:"DM Sans",sans-serif; */
+/* --font-family-heading:"Sora",sans-serif; */
 /* --font-size-body:1rem; */
 --line-height-body:1.7;
---heading-line-height:1.15;
+--heading-line-height:1.10;
 --letter-spacing-tight:-.02em;
 --letter-spacing-wide:.08em;
 --radius-small:.5rem;
@@ -70,7 +75,7 @@ html[data-theme="dark"]{
 --color-shadow:rgba(0,0,0,.25);
 --color-shadow-strong:rgba(0,0,0,.4);
 }
-body{
+/* body{
 margin:0;
 font-family:var(--font-family-base);
 font-size:var(--font-size-body);
@@ -80,6 +85,18 @@ color:var(--color-text);
 background:var(--color-background);
 overflow-x:hidden;
 transition:background-color var(--transition-base),color var(--transition-base);
+} */
+ body{
+    margin:0;
+    font-family:var(--font-family-base);
+    font-size:16px;
+    font-weight:400;
+    line-height:var(--line-height-body);
+    color:var(--color-text);
+    background:var(--color-background);
+    overflow-x:hidden;
+    transition:background-color var(--transition-base),
+                color var(--transition-base);
 }
 img{
 max-width:100%;
@@ -100,7 +117,7 @@ font:inherit;
 button{
 cursor:pointer;
 }
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -111,6 +128,20 @@ color:var(--color-heading);
 font-weight:600;
 line-height:var(--heading-line-height);
 letter-spacing:var(--letter-spacing-tight);
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-top:0;
+    color:var(--color-heading);
+    font-family:var(--font-family-heading) !important;
+    /* font-size: 32px !important;  */
+    font-weight:600;
+    line-height:var(--heading-line-height);
+    letter-spacing:var(--letter-spacing-tight);
 }
 p{
 margin-top:0;
@@ -193,7 +224,7 @@ column-gap:2rem;
 
     color: var(--color-primary);
 
-    font-family: "Bodoni Moda", "Cormorant Garamond", Georgia, serif;
+    font-family: var(--font-family-heading);
     font-size: 20px;
     font-weight: 600;
     line-height: 1;
@@ -210,7 +241,7 @@ column-gap:2rem;
 
     color: var(--color-secondary);
 
-    font-family: "Bodoni Moda", "Cormorant Garamond", Georgia, serif;
+font-family:var(--font-family-heading);
     font-size: 20px;
     font-weight: 600;
     line-height: 1;
@@ -1964,5 +1995,43 @@ html[dir="rtl"] .dropdown-link {
         transform: rotate(180deg);
     }
 
+}
+
+/* =====================================================
+   GLOBAL HEADING TYPOGRAPHY
+   Same font family and size for all headings
+===================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero-title,
+.section-title,
+.baking-inspiration-content h3,
+.why-bakers-intro h2,
+.bakers-note-content h2,
+.testimonials-heading h2,
+.newsletter-content h2 {
+    font-family: var(--font-family-heading) !important;
+    /* font-size: 32px ; */
+    font-weight: 600 !important;
+    /* line-height: 1.2 ; */
+    letter-spacing: -0.02em !important;
+}
+
+/* =========================================================
+   GLOBAL HERO HEIGHT
+   ========================================================= */
+
+.contact-hero,
+.products-hero,
+.recipes-hero,
+.bulk-hero,
+.premium-hero,
+.classic-hero {
+    min-height: 100vh;
 }
 

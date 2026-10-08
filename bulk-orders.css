@@ -1,3 +1,47 @@
+/* =========================================================
+   BULK ORDERS - TYPOGRAPHY STANDARDIZATION
+   ========================================================= */
+
+/* Consistent body text */
+.bulk-hero p,
+.bulk-process__heading p,
+.bulk-process__step p,
+.bulk-solutions__content > p,
+.bulk-solution p,
+.bulk-cta__content > p,
+.bulk-benefits__heading p,
+.bulk-benefit p,
+.bulk-faq__intro p,
+.bulk-faq__answer p,
+.bulk-enquiry__heading p,
+.bulk-enquiry__info > p,
+.bulk-enquiry__point p {
+    font-family: var(--font-family-base) !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 1.7 !important;
+}
+
+
+/* Consistent headings and subheadings */
+.bulk-hero h1,
+.bulk-process__heading h2,
+.bulk-process__step h3,
+.bulk-solutions__content h2,
+.bulk-solution h3,
+.bulk-cta__content h2,
+.bulk-benefits__heading h2,
+.bulk-benefit h3,
+.bulk-faq__intro h2,
+.bulk-enquiry__heading h2,
+.bulk-enquiry__info h3,
+.bulk-enquiry__point h4 {
+    font-family: var(--font-family-heading) !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+}
+
 .bulk-hero{
 position:relative;
 width:100%;
@@ -230,7 +274,7 @@ letter-spacing:.12em;
 .bulk-solutions__content h2{
 margin:0 0 14px;
 color:var(--color-secondary);
-font-size:clamp(32px,4vw,46px);
+font-size:clamp(30px,4vw,44px);
 font-weight:500;
 line-height:1.15;
 }
@@ -312,7 +356,7 @@ letter-spacing:.12em;
 max-width:600px;
 margin:0 0 15px;
 color:var(--color-secondary);
-font-size:clamp(32px,4vw,46px);
+font-size:clamp(30px,4vw,44px);
 font-weight:500;
 line-height:1.15;
 }
@@ -446,7 +490,7 @@ line-height:1.2;
 
     color: var(--color-secondary);
 
-    font-size: clamp(32px, 4vw, 46px);
+    font-size: clamp(30px,4vw,44px);
 
     font-weight: 500;
 
@@ -610,7 +654,7 @@ line-height:1.2;
 
     color: var(--color-secondary);
 
-    font-size: clamp(32px, 4vw, 46px);
+    font-size: clamp(30px,4vw,44px);
 
     font-weight: 500;
 
@@ -2137,8 +2181,11 @@ font-size:20px;
 }
 
 .bulk-enquiry__heading h2 {
-    margin: 12px 0 16px;
-    color: var(--color-heading);
+    margin:0 0 12px;
+color:var(--color-secondary);
+font-size:clamp(30px,4vw,44px);
+font-weight:500;
+line-height:1.15;
 }
 
 .bulk-enquiry__heading p {
