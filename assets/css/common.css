@@ -2035,3 +2035,84 @@ h6,
     min-height: 100vh;
 }
 
+
+/* =========================================
+   NAVIGATION ACTIVE UNDERLINE
+========================================= */
+
+@media (min-width: 992px) {
+
+    .navigation-link,
+    .navigation-dropdown-toggle {
+        position: relative;
+    }
+
+    .navigation-link::after,
+    .navigation-dropdown-toggle::after {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 0.8rem;
+        right: 0.8rem;
+        height: 2px;
+        background-color: var(--color-primary, #B45309);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.25s ease;
+    }
+
+    .navigation-link.active::after,
+    .navigation-dropdown-toggle.active::after {
+        transform: scaleX(1);
+    }
+
+    .navigation-link:hover::after,
+    .navigation-dropdown-toggle:hover::after {
+        transform: scaleX(1);
+    }
+
+}
+
+/* =========================================
+   CONSISTENT SECTION TAG STYLING
+========================================= */
+
+.section-eyebrow {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+
+    padding: 0.4rem 0.85rem;
+    margin-bottom: 1rem;
+
+    color: var(--color-primary) !important;
+    background-color: var(--color-surface-secondary);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-pill);
+
+    font-family: var(--font-family-base);
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    line-height: 1.4;
+    letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
+    text-decoration: none;
+
+    width: fit-content;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.section-eyebrow i,
+.section-eyebrow svg {
+    width: 0.9rem;
+    height: 0.9rem;
+    flex-shrink: 0;
+}
+
+html[data-theme="dark"] .section-eyebrow {
+    color: var(--color-primary-light) !important;
+    background-color: var(--color-dark-surface-secondary);
+    border-color: var(--color-primary-light);
+}
